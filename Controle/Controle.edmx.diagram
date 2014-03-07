@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="e12b73e118ae496d812f5cc505fa7486" Name="Diagram1" ZoomLevel="55" ShowGrid="false">
+        <EntityTypeShape EntityType="controleModel.ItemVenda" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="controleModel.Produto" Width="1.5" PointX="2.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="controleModel.Situacao" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="controleModel.Venda" Width="1.5" PointX="4.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="controleModel.Cliente" Width="1.5" PointX="6.2101751855621936" PointY="13.215589395358967" />
+        <EntityTypeShape EntityType="controleModel.FormaPagamento" Width="1.5" PointX="6.2092790036505452" PointY="1.8559516080915703" />
+        <EntityTypeShape EntityType="controleModel.Fornecedor" Width="1.5" PointX="7.125" PointY="20.5" />
+        <EntityTypeShape EntityType="controleModel.Pagamentos" Width="1.5" PointX="7.3952775948658953" PointY="9.8374658272776134" />
+        <EntityTypeShape EntityType="controleModel.SituacaoPagamento" Width="1.5" PointX="11.875662328617491" PointY="20.821436355272976" />
+        <AssociationConnector Association="controleModel.FK_Pagamentos_SituacaoPagamento" />
+        <AssociationConnector Association="controleModel.FK_Pagamentos_Venda" />
+        <AssociationConnector Association="controleModel.FK_Venda_Cliente" />
+        <AssociationConnector Association="controleModel.FK_Venda_FormaPagamento" />
+        <AssociationConnector Association="controleModel.FK_Itens_Fornecedor" />
+        <AssociationConnector Association="controleModel.FK_Itens_Produto" />
+        <AssociationConnector Association="controleModel.FK_Itens_Situacao" />
+        <AssociationConnector Association="controleModel.FK_Itens_Venda" />
+        <EntityTypeShape EntityType="controleModel.Responsavel" Width="1.5" PointX="9.125" PointY="0.5" />
+        <EntityTypeShape EntityType="controleModel.Tarefa" Width="1.5" PointX="11" PointY="0.5" />
+        <AssociationConnector Association="controleModel.FK_Tarefa_Responsavel" />
+        <EntityTypeShape EntityType="controleModel.Arquivo" Width="1.5" PointX="4.25" PointY="18" />
+        <AssociationConnector Association="controleModel.FK_Arquivo_Itens" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
